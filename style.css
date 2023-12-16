@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,600&family=Jost:ital,wght@0,100;0,300;0,400;0,500;0,900;1,200&family=Lato:ital,wght@0,900;1,700;1,900&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;1,400;1,500;1,600;1,800&family=Roboto:wght@500;700&display=swap');
+/*Resets*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+   overflow:scroll;
+}
+h1{
+    font-family: 'Dancing Script', cursive;
+  
+}
+.carousel-item img{
+    width: 100%;
+    height: 70vh;
+    
+}
+.card-body img{
+min-width: 50%;
+min-height: 100px;
+}
+:root{
+    --primary-text-color:#e23516;
+    --secondary-text-color:#18b6c1c7;
+    --accent-color:#155c8b;
+    --accent-color-dark:#115da4;
+    --padding-inline-section:20px;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    /*color: var(--primary-text-color);*/
+}
+/*Top Banner*/
+.top-banner{
+    
+    background-color: #4fb3d4;
+    background-size: 300px;
+}
+.banner-text{
+    color: #fff;
+    padding: 15px 30px;
+    text-align: center;
+}
+/*nav Bars*/
+.container{
+    max-width: 1380px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+.main-nav{
+    margin-top: 20px;
+justify-content: space-between;
+}
+.company-logo img{
+    width: 200px;
+}
+.nav-links{
+    flex-basis: 730px;
+}
+.nav-links ul{
+    justify-content: end;
+    gap: 45px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.hover-link{
+    color: var(--primary-text-color);
+    transition: 0.2s;
+}
+.hover-link:hover{
+color: var(--accent-color);
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul{
+    list-style: none;
+}
+.primary-button{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 600;
+    color: white !important;
+    padding: 10px 20px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+}
+primary-button:hover{
+    background-color: var(--6accent-color-dark);
+}
+.secondary-button{
+    border: 1px solid;
+    border-radius: 6px;
+    font-weight: 600;
+    color: var(--primary-text-color)!important;
+    padding: 12px 20px;
+    transition: 0.2s ease-out;
+}
+.secondary-button:hover{
+    border-color: var(--accent-color);
+    color: var(--accent-color)!important;
+}
+/*Header Section*/
+header{
+    padding: 50px var(--padding-inline-section);
+}
+.header-section{
+    justify-content: center;
+    gap: 50px;
+}
+.header-left{
+    max-width: 40vw;
+}
+.header-left h1{
+    margin-top: 20px;
+}
+.get-started-btn{
+    margin-top: 20px;
+}
+.header-right img{
+    width: 700px;
+}
+/*list of addmissions*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  th,
+  td {
+    text-align: initial;
+    padding: 5px 32px 6px 20px;
+    margin: 0;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  .btn {
+    text-align: right;
+    color: seagreen;
+    display: inline-grid;
+  }
+  
+/* Style the header section */
+header {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Fira+Sans:ital,wght@1,600&family=Jost:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,200&family=Lato:ital,wght@0,900;1,700;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,700;1,800&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,600;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href=" 	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--Header-->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-white px-4 border-bottom fixed-top"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand fs-1" href="#"
+            >Smart<span class="text-primary">Future</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-center">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-primary"
+                  aria-current="page"
+                  href="home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="addmisnistration.html"
+                  >Administration</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contactus</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Aboutus">AboutUs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="addmission.html">Addmissions</a>
+              </li>
+            </ul>
+
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Carsoule-->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="false"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/12.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/Img1.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/img22.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--Section-->
+
+    <section class="about my-5">
+      <div class="container">
+        <div class="text-center my-5">
+          <!--Also we add here some animation-->
+          <h1 data-aos="fade-up" data-aos-offset="200">
+            About<span class="text-primary">Us</span>
+          </h1>
+          <hr class="w-25 m-auto" />
+        </div>
+        <div class="row">
+          <div
+            class="col-sm-12 col-md-6 col-lg-6 col-12"
+            data-aos="zoom-in"
+            data-aos-offset="200"
+          >
+            <h1>
+              What do you <span class="text-primary">want to Know.?</span>
+            </h1>
+
+            <p>
+              Welcome to our school's website!. At SmartFuture we strive to
+              create a nurturing environment where students can flourish
+              academically, socially, and emotionally. Our dedicated team of
+              educators is passionate about inspiring a love for learning and
+              equipping students with the necessary skills to succeed in a
+              rapidly changing world. With a diverse range of programs,
+              extracurricular activities, and a strong emphasis on character
+              development, we aim to foster well-rounded individuals who are
+              prepared to tackle future challenges. We believe in the power of
+              collaboration between staff, students, parents, and the wider
+              community, as it is through these strong partnerships that we can
+              truly make a positive impact. Thank you for visiting our website,
+              and we hope it provides you with valuable insights into our
+              vibrant educational ecosystem.
+            </p>
+
+            <button type="button" class="btn btn-light mb-5">
+              More Aboutus!
+            </button>
+
+            <!--Acordian-->
+            <div
+              class="accordion"
+              id="accordionExample"
+              data-aos="zoon-in-left"
+              data-aos-offset="200"
+            >
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Vission
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It
+                    is shown by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                  Academic Programs
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong>
+                    It is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                  Admissions Information
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It
+                    is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-end">
+            <img class="img-fluid img-thumbnail" src="images/accodian.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Section 2-->
+    <section class="services py-5 bg-light">
+      <div class="container">
+        <div class="text-center my-5">
+          <h1 class="text-center">Our Future <span class="text-primary">Ready Processr</span></h1>
+          <hr class="w-25 m-auto" />
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+            <div class="card">
+              <div class="card-body">
+                <!--ICONS-->
+                <h5 class="card-title">Who am I..?</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <!--ICONS-->
+                <h5 class="card-title">Where am I going.?</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+            <div class="card">
+              <div class="card-body">
+                <!--ICONS-->
+                <h5 class="card-title">How do I get there..?</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--2nd row of cards-->
+        <div class="row mt-5">
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+            <div class="card">
+              <div class="card-body">
+                <!--ICONS-->
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <!--ICONS-->
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+            <div class="card">
+              <div class="card-body">
+                <!--ICONS-->
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--SECTION For Faculty-->
+    <section class="team my-5 text-center">
+      <div class="container">
+        <div class="text-center my-5">
+          <h1>Faculty<span class="text-primary">Members..</span></h1>
+          <hr class="w-25 m-auto" />
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-4 c0l-lg-4 col-12">
+            <div class="card" data-aos="zoom-in-up" data-aos-offset="200">
+              <div class="card-body">
+                <img
+                  src="images/Prof1.jpg"
+                  alt=""
+                  class="img-fluid rounded-circle border border-primary p-2"
+                />
+                <h5 class="card-title mt-4">Special title treatment</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 c0l-lg-4 col-12">
+            <div
+              class="card"
+              data-aos="zoom-in"
+              data-aos-offset="200"
+              data-aos="zoom-in-down"
+              data-aos-offset="200"
+            >
+              <div class="card-body">
+                <img
+                  src="images/p2.jpg"
+                  alt=""
+                  class="img-fluid rounded-circle border border-primary p-2"
+                />
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 c0l-lg-4 col-12">
+            <div class="card" data-aos="zoom-in-left" data-aos-offset="200">
+              <div class="card-body">
+                <img src="images/p3.jpg" alt="" class="img-fluid rounded-circle  border border-primary p-2" />
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--SECTION #3-->
+    <section class="contact py-5">
+      <div class="container">
+        <div class="text-center my-5">
+          <h1>Feel free<span class="text-primary">To Connect.</span></h1>
+          <hr class="w-25 m-auto" />
+        </div>
+        <div class="row">
+          <div
+            class="col-sm-12 col-md-6 col-lg-6 col-12"
+            data-aos="fade-up-left"
+          >
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" />
+              </div>
+              <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="inputPassword4"
+                />
+              </div>
+              <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputAddress"
+                  placeholder="1234 Main St"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity" />
+              </div>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip" />
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="gridCheck"
+                  />
+                  <label class="form-check-label" for="gridCheck">
+                    Check me out
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </div>
+            </form>
+          </div>
+          <div
+            class="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-end p-4"
+            data-aos="fade-up-right"
+          >
+            <img src="" alt="" class="img-fluid img-thumbnail p-2" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container-fluid bg-primary text-white p-2 text-center fs-5">
+      SamartFuture@
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addmissions</title>
+    <link rel="stylesheet" href="addm.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<style>
+    body {
+      padding: auto;
+      margin: auto;
+      text-align: center;
+      position: center;
+      display: inline-grid;
+      border-color: 2 solid rgb(148, 145, 145);
+    }
+    ul {
+      position: sticky;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: rgb(212, 121, 11);
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: rgb(249, 151, 4);
+    }
+      
+    table{
+border-collapse: collapse;
+width: 100%;
+overflow: auto;
+box-sizing: border-box;
+      text-align: center;
+}
+
+th, td {
+text-align:left;
+padding: 9px 32px 6px 20px;  margin: 0;
+}
+
+tr:nth-child(odd) {background-color: #f2f2f2;}
+    .btn {
+      text-align: right;
+      color: seagreen;
+      display: inline-grid;
+    }
+  </style>
+<body>
+       <!--Top Banner-->
+       <div class="top-banner">
+        <div class="container">
+        <div class="small-bold-text banner-text">😊 BEST EDUCATION FOR YOUR KIDS.!</div>
+    </div>
+</div>
+
+<!--Nav Bar-->
+<nav>
+    <div class="container main-nav flex">
+<a href="#" class="company-logo">
+            <img src="/imgs/log.jpg" alt="">
+
+ </a>
+        <div class="nav-links">
+            <ul class="flex">
+                <li><a href="home.html" class="hover-link">Home</a></li>
+                <li><a href="addmisnistration.html" class="hover-link">Administration</a></li>
+                <li><a href="about.html" class="hover-link">About Us!</a></li>
+                <li><a href="addmission.html" class="hover-link">Addmissions</a></li>
+                <li><a href="courses.html" class="hover-link">Courses</a></li>
+                <li><a href="contact.html" class="hover-link">Contact US </a></li>
+                <li><a href="signup.html" class="hover-link secondary-button">Sign in</a></li>
+                <li><a href="#" class="hover-link primary-button">Sign up</a></li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+<table>
+    <tr>
+        <td>
+
+
+        </td>
+    </tr>
+    <tr><td></td>
+    </tr>
+    <tr>
+        <th>Full Name</th>
+        <th>Age</th>
+        <th>Grade</th>
+        <th>Parents'Name</th>
+        <th>Email</th>
+        <th>Nationality</th>
+        <th>Place of Birth</th>
+        <th>Date of Birth</th>
+        <th>Religion</th>
+    </tr>
+    <% for(var a=0; a < data.length; a++){ %>    
+        <tr>
+            <td><%=data[a].name%> </td>
+            <td><%=data[a].age%> </td>
+            <td><%=data[a].grade%> </td>
+            <td><%=data[a].parents%> </td>
+            <td><%=data[a].nationality%> </td>
+            <td><%=data[a].place%> </td>
+            <td><%=data[a].dateBirth%> </td>
+            <td><%=data[a].religion%> </td>
+
+            <td>
+                <a href="editAddmission.htm?doc_id=<%= data[a]._id%>">Update</a>
+            </td>
+            <td>
+                <a href="deleteAddmission.htm?doc_id=<%= data[a]._id%>">Delete</a>
+            </td>
+        </tr>
+<% } %>
+</table>
+    </body>
+    </html>

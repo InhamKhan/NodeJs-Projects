@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addmissions</title>
+    <link rel="stylesheet" href=addm.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+       <!--Top Banner-->
+       <div class="top-banner">
+        <div class="container">
+        <div class="small-bold-text banner-text">😊 BEST EDUCATION FOR YOUR KIDS.!</div>
+    </div>
+</div>
+
+<!--Nav Bar-->
+<nav>
+    <div class="container main-nav flex">
+<a href="#" class="company-logo">
+            <img src="/imgs/log.jpg" alt="">
+
+ </a>
+        <div class="nav-links">
+            <ul class="flex">
+                <li><a href="home.html" class="hover-link">Home</a></li>
+                <li><a href="addmisnistration.html" class="hover-link">Administration</a></li>
+                <li><a href="about.html" class="hover-link">About Us!</a></li>
+                <li><a href="addmission.html" class="hover-link">Addmissions</a></li>
+                <li><a href="courses.html" class="hover-link">Courses</a></li>
+                <li><a href="contact.html" class="hover-link">Contact US </a></li>
+                <li><a href="signup.html" class="hover-link secondary-button">Sign in</a></li>
+                <li><a href="Signup.html" class="hover-link primary-button">Sign up</a></li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+<div class="add-container">
+    <h2>School Admission Form</h2>
+    <form action="http://localhost:8080/updateAddmission.htm" onsubmit="return validateAddmisions()" method="POST">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" value="<%=addmissionRecord.name %> ">
+      
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" value="<%=addmissionRecord.age %>" >
+      
+      <label for="grade">Grade:</label>
+      <select id="grade" name="grade" required value="<%=addmissionRecord.grade %>" >
+        <option value="">Select Grade</option>
+        <option value="1">Grade 1</option>
+        <option value="2">Grade 2</option>
+        <option value="3">Grade 3</option>
+        <option value="3">Grade 4</option>
+        <option value="3">Grade 5</option>
+        <option value="3">Grade 6</option>
+        <!-- Add more grade options as needed -->
+      </select>
+      
+      <label for="parents">Parents' Names:</label>
+      <input type="text" id="parents" name="parents" value="<%=addmissionRecord.parents %>" >
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" value="<%=addmissionRecord.email %>" >
+
+      <label for="nationality">Nationality</label>
+      <input type="text" id="nationality" class="nationality" value="<%=addmissionRecord.nationality %>" >
+
+      <label for="pob">Place of Birth:</label>
+      <input type="text" id="place" name="place" value="<%=addmissionRecord.place %>" >
+
+      <label for="birth">Date of Birth:</label>
+      <input type="date" id="dateBirth" class="dateBirth" value="<%=addmissionRecord.dateBirth %>">
+
+      <label for="religion">Religion</label>
+<input type="text" id="religion" class="religion" value="<%=addmissionRecord.religion %>">
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <script src="/script.js"></script>
+</body>
+</html>
